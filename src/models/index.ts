@@ -1,21 +1,14 @@
 import fs from 'fs';
 import path from 'path';
-import { Sequelize, DataTypes, Model } from 'sequelize';
+import { Sequelize, DataTypes } from 'sequelize';
 import process from 'process';
+import { Database } from 'sequelize-db-type/helper';
 
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(path.resolve(__dirname, '../config/config.js'))[env];
 
-const db = {} as {
-  sequelize: Sequelize;
-  Sequelize: typeof Sequelize;
-} & Record<
-  string,
-  Model<object, object> & {
-    associate?: (database: unknown) => void;
-  }
->;
+const db = {} as Database;
 
 const sequelize = config.use_env_variable
   ? new Sequelize(process.env[config.use_env_variable] ?? '', config)
