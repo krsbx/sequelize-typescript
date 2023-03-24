@@ -1274,10 +1274,10 @@ sequelize-cli@^6.6.0:
     umzug "^2.3.0"
     yargs "^16.2.0"
 
-sequelize-db-type@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/sequelize-db-type/-/sequelize-db-type-0.3.0.tgz#c06a40a14e0c821aa0f8850ea6926026ccffacbc"
-  integrity sha512-zuyT4crA+MuVVX+gc2DWhgYK3Ri7txng7nAuMlw8bwRNUsYwx2SFh9S3bbyE31U01SV20wKGs4kSchlIyCVidA==
+sequelize-db-type@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/sequelize-db-type/-/sequelize-db-type-0.3.3.tgz#3e32cd5a0b969999f69686028cf980c0cae5939b"
+  integrity sha512-Q7L2Ox2An/NzuepPtRts0S0NiNTBicGeRhBYXHdT9a0iAaeDa9YWURetVPwjXV/xHwLRdsA+ddJIl0QNwwxjFg==
   dependencies:
     app-root-path "^3.1.0"
     fs-extra "^11.1.1"
